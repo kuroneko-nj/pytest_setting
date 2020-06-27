@@ -1,0 +1,9 @@
+info: &data
+  name: lili
+  tel: 1331231231234
+address: &data2
+  <<: *data
+  detail: 憨憨
+con:
+  <<: *data2
+  bir: 2020-01-01

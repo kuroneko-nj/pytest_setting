@@ -1,0 +1,34 @@
+## 对象-第一种写法
+#info0: {name: "lili",'age': 18}
+## 对象-第二种写法
+#info1:
+#  name: "saber"#姓名
+#  age: 16 #年龄
+
+## 数组-方法1
+#list:
+#  - 1
+#  - 'saber'
+#  - "女"
+## 数组-方法2
+#list1: [1,"archer",'男']
+#
+## json格式{"info":[{"name":"张三"},{"name":"李四"}]}
+#json:
+#  - name: '张三'
+#  - name: "李四"
+
+#纯量
+name_str: lili
+int: 122
+float: 3.1415926
+bool: true # yaml的bool写法是小写python运行的时候会转成大写的True
+bool1: True # python的bool值写法也可以使用
+none: # 空类型
+none1: ~ # 空类型-不支持直接使用python的None
+none2: null # js shell java的null可以支持
+none3: Null # 大写也可
+# 日期类型-位数用错可能会出现读成字符串的情况
+data: 2020-11-11 11:11:11 # datetime.datetime(2020, 11, 11, 11, 11, 11)
+data1: 2020-11-11 # datetime.date(2020, 11, 11)
+data2: 11:11:11 # 40271
