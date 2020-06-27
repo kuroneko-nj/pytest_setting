@@ -1,10 +1,10 @@
 import os
-
 import yaml
+
 
 class GetData:
     @classmethod
-    def get_data_from_yaml(cls,path):
+    def get_data_from_yaml(cls, path):
         # 打开文件
         with open(path, encoding="utf-8")as f:
             # 读取文件
@@ -18,5 +18,7 @@ class GetData:
     @classmethod
     def BASE_PATH(cls):
         return os.path.abspath(os.path.dirname(__file__))
+
+
 if __name__ == '__main__':
-    GetData.get_data_from_yaml(GetData.BASE_PATH()+"/data/test_data.yaml")
+    GetData.get_data_from_yaml(GetData.BASE_PATH() + "/data/test_data.yaml")
